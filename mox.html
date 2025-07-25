@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   <meta charset="UTF-8" /> 
+  <div class="topbar">
+  <h1 class="topbar-title">The Button Clicker</h1>
+</div>
+      <div id="topBar">
+  
+</div>
+  <body>
+    
+<link rel="stylesheet" href="styles.css">
+         <h1>The Button Clicker 1.1</h1> 
+    <p> Welcome to the Button Clicker 1.1!!! Press Click me to Click the button!</p>
+  <link rel="stylesheet" href="styles.css">
+    </body>
+      
+
+
+      <meta name="viewport" content="width+device-width, initial-scale+1">
+</head>
+</html>
+
+<
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter with High Score</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      .cursive {
+        font-family: 'Dancing Script', cursive;
+        color: #000000;
+        font-size: 48px;
+      }
+
+      #count {
+        color: #00cdff;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      #highScore {
+        color: green;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        border: none;
+        background-color: #2196f3;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0b7dda;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="cursive">da counter</h1>
+    <h2>press the button</h2>
+
+    <p>You clicked <span id="count">0</span> times.</p>
+    <p>High Score: <span id="highScore">0</span></p>
+
+    <button onclick="increaseCount()">Click me!</button>
+    <button onclick="resetCount()">Reset</button>
+      
+     
+      
+    <script>
+      let count = 0;
+      let highScore = 0;
+
+      function increaseCount() {
+        count++;
+        document.getElementById("count").innerText = count;
+
+          function decreaseCount() {
+        count--; // if you want it to go negative
+        updateDisplay();
+      }
+
+
+     
+        if (count > highScore) {
+          highScore = count;
+          document.getElementById("highScore").innerText = highScore;
+        }
+      }
+
+      function resetCount() {
+        count = 0;
+        document.getElementById("count").innerText = count;
+        // Don't reset high score!
+      }
+    </script>
+
+  </body>
+</html>
+
+<canvas id="confetti" style="position: fixed; top: 0; left: 0; pointer-events: none;"></canvas>
